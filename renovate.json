@@ -6,9 +6,9 @@
   "customManagers": [
     {
         "customType": "regex",
-        "fileMatch": [
-          "(^|/)devcontainer\\.json$"
-        ],
+        "managerFilePatterns": [
+        "/(^|/)devcontainer\.json$/"
+      ],
         "matchStrings": [
           "^[\\t ]*\\\"version\\\"[\\t ]*:[\\t ]*\\\"(?<currentValue>.+)\\\",\\s*\\/\\/ renovate datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)(?: versioning=(?<versioning>\\S+))?$"
         ]
