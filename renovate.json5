@@ -14,5 +14,30 @@
         "\\\"version\\\"[\\t ]*:[\\t ]*\\\"(?<currentValue>.+)\\\",\\s*\\/\\/ renovate datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)(?: versioning=(?<versioning>\\S+))?"
       ]
     },
+    // rust toolchain
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/)rust-toolchain(?:\\.toml)?$/"
+      ],
+      "matchStrings": [
+        "channel[\\t ]*=[\\t ]*\\\"(?<currentValue>.+)\\\""
+      ],
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "rust-lang/rust"
+    },
+    // rustfmt
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/)rustfmt\\.toml$/"
+      ],
+      "matchStrings": [
+        "required_version[\\t ]*=[\\t ]*\\\"(?<currentValue>.+)\\\""
+      ],
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "rust-lang/rustfmt",
+      "versioningTemplate": "semver-coerced"
+    },
   ]
 }

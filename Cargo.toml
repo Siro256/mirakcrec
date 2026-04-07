@@ -1,0 +1,28 @@
+[workspace]
+resolver = "3"
+members = []
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+license = "MIT"
+license-file = "LICENSE"
+readme = "README_en.md"
+homepage = "https://github.com/Siro256/mirakcrec"
+repository = "https://github.com/Siro256/mirakcrec"
+keywords = ["dtv"]
+authors = [
+    "Siro / MIYAGI Naoki <siro@siro256.dev>",
+]
+
+[package]
+name = "mirakcrec"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+license-file.workspace = true
+readme.workspace = true
+homepage.workspace = true
+repository.workspace = true
+keywords.workspace = true
+authors.workspace = true

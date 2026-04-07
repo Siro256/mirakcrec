@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "rust-lang.rust-analyzer",
+        "vadimcn.vscode-lldb",
+        "dustypomerleau.rust-syntax",
+        "github.vscode-github-actions",
+        "github.codespaces",
+        "mrmlnc.vscode-json5"
+    ]
+}
