@@ -9,7 +9,7 @@
       "moby": false,
       "azureDnsAutoDetection": true,
       "installDockerBuildx": true,
-      "version": "29.3.1", // renovate datasource=docker depName=docker
+      "version": "29.4.0", // renovate datasource=docker depName=docker
       "dockerDashComposeVersion": "v2"
     },
     "ghcr.io/devcontainers/features/github-cli:1.1.0": {
