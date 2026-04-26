@@ -3,6 +3,9 @@
   "extends": [
     "config:recommended"
   ],
+  "assignees": [
+    "Siro256"
+  ]
   "customManagers": [
     // devcontainer features option
     {
